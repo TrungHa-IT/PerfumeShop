@@ -1,0 +1,298 @@
+  .container {
+                padding-top: 100px; /* Đảm bảo không bị header che khuất */
+            }
+
+            .img-fluid {
+                display: block; /* Đảm bảo hình ảnh không bị méo mó */
+                max-width: 100%; /* Giữ hình ảnh không vượt quá khung */
+                height: auto; /* Tự động điều chỉnh chiều cao phù hợp */
+            }
+
+            .row.gx-2 .col-3 {
+                padding-right: 5px; /* Giảm padding giữa các hình nhỏ */
+                padding-left: 5px; /* Giảm padding giữa các hình nhỏ */
+            }
+
+            /* Cân bằng chiều rộng cột */
+            .col-lg-5, .col-lg-7 {
+                display: flex;
+                justify-content: center; /* Căn giữa nội dung trong cột */
+            }
+
+            /* Cân bằng chiều cao của các cột */
+            aside, main {
+                display: flex;
+                flex-direction: column; /* Các mục trong cột sắp xếp theo chiều dọc */
+            }
+
+            /* Các điều chỉnh cho các nút và input */
+            .input-group button {
+                width: auto; /* Cho phép nút điều chỉnh kích thước theo nội dung */
+            }
+            /* Container for the dropdown */
+            /* Container for the input group */
+            .col-md-6 {
+                margin-bottom: 15px; /* Adds space below the container */
+            }
+
+            /* Label styles */
+            .form-label {
+                font-weight: bold; /* Makes the label text bold */
+                font-size: 1rem; /* Sets the font size */
+                color: #333; /* Sets the text color */
+                display: block; /* Ensures the label takes up the full width */
+                margin-bottom: 5px; /* Adds space below the label */
+            }
+
+            /* Dropdown styles */
+            .form-select {
+                width: 100%; /* Ensures the dropdown takes up the full width of its container */
+                padding: 10px; /* Adds padding inside the dropdown */
+                font-size: 1rem; /* Sets the font size */
+                color: #555; /* Sets the text color */
+                border: 1px solid #ccc; /* Adds a border around the dropdown */
+                border-radius: 4px; /* Rounds the corners of the dropdown */
+                background-color: #fff; /* Sets the background color */
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Adds a subtle inner shadow for a 3D effect */
+                transition: border-color 0.3s, box-shadow 0.3s; /* Adds a transition effect for the border and shadow */
+                margin-bottom: 15px; /* Adds space below the dropdown */
+            }
+
+            /* Style for the options inside the dropdown */
+            .form-select option {
+                padding: 10px; /* Adds padding inside each option */
+                color: #333; /* Sets the text color */
+                background-color: #fff; /* Sets the background color */
+            }
+
+            /* Change border color and box shadow on focus */
+            .form-select:focus {
+                border-color: #66afe9; /* Changes the border color on focus */
+                outline: none; /* Removes the default outline */
+                box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Adds a blue shadow on focus */
+            }
+
+            /* Quantity input group styles */
+            .quantity-wrapper {
+                display: flex; /* Aligns the buttons and input in a row */
+                align-items: center; /* Centers the items vertically */
+                border: 1px solid #ccc; /* Adds a border around the group */
+                border-radius: 4px; /* Rounds the corners of the group */
+                overflow: hidden; /* Ensures rounded corners for children */
+                width: fit-content; /* Ensures the wrapper fits the content */
+            }
+
+            .quantity-btn {
+                padding: 10px 15px; /* Adds padding inside the button */
+                font-size: 1rem; /* Sets the font size */
+                color: #555; /* Sets the text color */
+                background-color: #f9f9f9; /* Sets the background color */
+                border: none; /* Removes the border */
+                cursor: pointer; /* Changes the cursor to a pointer */
+                transition: background-color 0.3s; /* Adds a transition effect for the background */
+            }
+
+            .quantity-btn:hover {
+                background-color: #f0f0f0; /* Changes the background color on hover */
+            }
+
+            .quantity-btn:active {
+                background-color: #e0e0e0; /* Changes the background color when clicked */
+            }
+
+            .quantity-input {
+                width: 100px; /* Sets a fixed width for the input field */
+                padding: 10px; /* Adds padding inside the input field */
+                font-size: 1rem; /* Sets the font size */
+                color: #555; /* Sets the text color */
+                border: none; /* Removes the border */
+                text-align: center; /* Centers the text inside the input field */
+                outline: none; /* Removes the default outline */
+                transition: box-shadow 0.3s; /* Adds a transition effect for the shadow */
+            }
+
+            .quantity-input:focus {
+                box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); /* Adds a blue shadow on focus */
+            }
+            /* Main image container */
+            .image-container {
+                position: relative;
+                text-align: center;
+            }
+
+            #main-image {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                transition: opacity 0.5s ease-in-out;
+            }
+
+            /* Navigation buttons */
+            .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+            }
+
+            .prev {
+                left: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+
+            .prev:hover, .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            /* Thumbnail images */
+            .cursor-pointer {
+                cursor: pointer;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .cursor-pointer:hover {
+                transform: scale(1.1);
+            }
+            /* Button group styles */
+            .button-group {
+                display: flex;
+                justify-content: normal;
+                margin-top: 20px;
+            }
+
+            .button-group .btn {
+                padding: 5px 10px;
+                font-size: 1rem;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 4px;
+                text-transform: uppercase; /* Make text uppercase */
+                margin-right: 20px; /* Add space between buttons */
+            }
+
+            .button-group .btn-add-to-cart,
+            .button-group .btn-add-to-wishlist,
+            .button-group .btn-buy-now {
+                font-size: 20px;
+                height: 50px;
+            }
+            .button-group .btn-add-to-cart {
+                background-color: #f6692a;
+                padding-left: 10px;
+            }
+
+            .button-group .btn-add-to-wishlist {
+                background-color: #f6692a; /* Yellow */
+                padding-left: 10px;
+                font-size: 30px;
+            }
+
+            .button-group .btn-buy-now {
+                background-color: #333; /* Red */
+                padding-left: 10px;
+            }
+            /* Enhances the overall look of the section */
+            .bg-light {
+                background-color: #f8f9fa; /* Light grey background */
+            }
+
+            /* Border and padding for the main content area */
+            .border {
+                border: 1px solid #dee2e6; /* Light grey border */
+            }
+
+            .rounded-2 {
+                border-radius: 0.5rem; /* Rounded corners */
+            }
+
+            /* General padding for content inside bordered areas */
+            .p-3 {
+                padding: 1rem; /* Consistent padding */
+            }
+
+
+            /* Styling for images to make them responsive and neatly formatted */
+            .img-fluid {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 1rem; /* Space below images */
+            }
+
+            /* Card styling for similar products */
+            .card {
+                box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075); /* Subtle shadow */
+            }
+
+            .card-body {
+                padding: 1rem; /* Padding inside card */
+            }
+
+            .card-img-top {
+                width: 100%; /* Full width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            /* Styling for product names in cards */
+            .card-title {
+                font-size: 1rem; /* Suitable font size for product titles */
+                margin-bottom: 0.5rem; /* Space below the title */
+            }
+
+            .stretched-link {
+                color: #007bff; /* Bootstrap primary blue for links */
+                text-decoration: none; /* No underline */
+            }
+
+            .stretched-link:hover {
+                text-decoration: underline; /* Underline on hover for better user interaction */
+            }
+
+            /* Title for the similar products section */
+            .section_title {
+                font-weight: bold; /* Bold font for emphasis */
+                color: #343a40; /* Dark grey for contrast */
+                margin-bottom: 1rem; /* Space below the section title */
+            }
+
+            .text-center {
+                text-align: center; /* Center align text */
+            }
+
+            /* Carousel specific styles if you are using Owl Carousel */
+            .owl-theme .owl-nav {
+                margin-top: 0.5rem; /* Space above carousel navigation */
+            }
+
+            .owl-theme .owl-dots {
+                margin-top: 0.5rem; /* Space above carousel dots */
+            }
+
+            /* Ensure the carousel items are centered and spaced nicely */
+            .item {
+                padding: 15px; /* Padding around items to prevent crowding */
+            }
+            .product-title {
+                font-size: larger;
+                margin-top: 10px;
+                cursor: pointer;
+                color: #333;  /* Bootstrap primary blue */
+                font-weight: bold;
+            }
+
+            .product-title:hover {
+                color:  #f6692a;  /* Indicate clickable */
+            }

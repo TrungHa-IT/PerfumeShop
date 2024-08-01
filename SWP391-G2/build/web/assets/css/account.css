@@ -1,0 +1,73 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 29, 2024, 9:57:04 PM
+    Author     : hatru
+*/
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.user-form input[type="text"],
+.user-form input[type="password"],
+.user-form input[type="file"],
+.user-form input[type="date"],
+.user-form input[type="tel"],
+.user-form input[type="email"],
+.user-form select,
+.user-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.user-form button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-form button:hover {
+    background-color: #0056b3;
+}

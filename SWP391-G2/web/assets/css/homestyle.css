@@ -1,0 +1,645 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 thg 5, 2024, 00:00:45
+    Author     : pna29
+*/
+body{
+    color: #42495b;
+}
+h1{
+    color: #d6dae4;
+}
+body, input, textarea, button, select {
+    line-height: 1.7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+}
+header {
+    background: #000;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    padding-top: 12px;
+}
+.btn, input[type="submit"] {
+    display: inline-block;
+    height: 40px;
+    padding: 0 20px;
+    white-space: nowrap;
+    outline: none !important;
+    cursor: pointer;
+    border-radius: 0;
+    letter-spacing: 0;
+    transition: background-color 0.1s ease-in;
+    border-radius: 5px;
+}
+.header_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 240px;
+    background-color: white;
+    padding-top: 1px;
+    margin-top: 7px;
+}
+
+.search-bar input {
+    border: none;
+    padding: 8px 12px;
+    width: calc(100% - 40px);
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.search-bar button i {
+    font-size: 18px;
+    color: #000;
+}
+
+
+.logo {
+    padding: 5px 0;
+}
+header.header nav {
+    background-color: rgba(12, 11, 11, 0.7);
+    border-top: 1px solid #0c0b0b ;
+
+}
+header nav .nav {
+    position: static;
+}
+header.header nav .nav-item.active>a, header.header nav .nav-item:hover>a, header.header nav .nav-item:focus>a {
+    background-color: transparent;
+}
+header.header nav .nav-item:hover>a, header.header nav .nav-item:focus>a{
+    font-weight: 700;
+    color: #666;
+}
+header.header nav .nav-item {
+    margin-right: auto;
+}
+header nav .nav-item {
+    float: left;
+    position: relative;
+}
+header nav {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a, .text-link {
+    color: aliceblue;
+    text-decoration: none;
+    background: transparent;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.nav-fill .nav-item .nav-link, .nav-justified .nav-item .nav-link {
+    width: 100%;
+    color: aliceblue ;
+    font-weight: bolder;
+}
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #0c0b0b;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.nav-item .dropdown-menu .nav-link ,
+.nav-item-lv3 .dropdown-menu-lv2{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.nav-item .dropdown-menu .nav-link:hover{
+    background-color: #666;
+    padding: 12px 16px;
+}
+.nav-item-lv2 , .nav-item-lv3 {
+    position: relative;
+}
+
+.dropdown-menu-lv2 {
+    padding: 12px 16px;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #0c0b0b;
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item-lv2:hover .dropdown-menu-lv2 {
+    display: block;
+}
+
+/* Cart and Wishlist Icons */
+.my-wishlist,
+.my-cart {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 6px;
+
+}
+
+/* Tooltip */
+[data-toggle="tooltip"] {
+    position: relative;
+    display: inline-block;
+}
+
+[data-toggle="tooltip"]:hover:after {
+    content: attr(title);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 60%;
+    right: 1%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+}
+/* Cart Counter */
+.count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff0000;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* Cart Content */
+.top-cart-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 999;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.my-cart:hover .top-cart-content {
+    display: block;
+}
+
+.no-item {
+    padding-right: 25px;
+    text-align: center;
+}
+
+.no-item p {
+    margin: 0;
+    color: #555;
+    white-space: nowrap;
+}
+
+/* Cart and Wishlist Icons Styling */
+.my-wishlist a,
+.my-cart a {
+    color: #f9f9f9;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+}
+
+.my-wishlist a:hover,
+.my-cart a:hover {
+    color: #000;
+    text-decoration: none;
+}
+/* Phần Gear */
+.my-gear {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px; /* Khoảng cách giữa các phần */
+}
+
+.my-gear a {
+    color: #f9f9f9;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+}
+
+.my-gear a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/* General styling for the carousel */
+.carousel {
+    position: relative;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Styling for the images */
+.carousel-item img {
+    height: 700px; /* Adjust the height as per your requirement */
+    object-fit: cover;
+}
+
+/* Styling for the captions */
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background-color: rgba(243, 234, 234, 0.987); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Styling for the indicators */
+.carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(24, 24, 24, 0.819);
+    border: none;
+    margin: 2px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-indicators .active {
+    background-color: #0f0e0e;
+    transform: scale(1.2);
+}
+
+/* Styling for the control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(243, 235, 235, 0.975);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    background-size: 100%, 100%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(243, 235, 235, 0.975);
+    transform: scale(1.1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 43%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------------Men's Perfumes--------------------*/
+/* Container and Section */
+.section_module_product_index_1 {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.section-border {
+    border-top: 3px solid #333;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Heading */
+.heading-title h3 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.heading-title h3 a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.heading-title h3 a:hover {
+    text-decoration:none;
+    font-weight: bold;
+}
+
+/* Image Effect */
+.image-effect img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-effect img:hover {
+    transform: scale(1.05);
+}
+
+/* Owl Carousel */
+.owl-carousel .owl-item {
+    padding: 10px;
+}
+
+.owl-carousel .owl-item .product {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-item .product:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.owl-carousel .owl-item .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.owl-carousel .owl-item .product h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.owl-carousel .owl-item .product p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.owl-carousel .owl-item .product .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Owl Navigation */
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.owl-nav .owl-prev:hover, .owl-nav .owl-next:hover {
+    background: #555;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+/* View All Button */
+.text-center.xt button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.text-center.xt button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text-center.xt button:hover {
+    background:  #f6692a;
+}
+
+.text-center.xt button i {
+    margin-right: 5px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .section_module_product_index_1 {
+        padding: 20px 0;
+    }
+
+    .heading-title h3 {
+        font-size: 20px;
+    }
+
+    .owl-carousel .owl-item {
+        padding: 5px;
+    }
+
+    .owl-nav .owl-prev, .owl-nav .owl-next {
+        padding: 5px;
+    }
+
+    .owl-nav .owl-prev {
+        left: -15px;
+    }
+
+    .owl-nav .owl-next {
+        right: -15px;
+    }
+}
+
+/*-----------------------Footer------------------------*/
+.footer {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px 0; /* Padding for top and bottom */
+}
+
+.footer a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Ensure normal weight by default */
+}
+
+.footer a:hover {
+    text-decoration: none; /* Underline links on hover */
+    font-weight: bold; /* Make text bold on hover */
+    color: #f6692a;
+}
+.footer .footer-widget h4 {
+    font-size: 25px; /* Increase the font size */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #fff; /* Ensure the heading is white */
+}
+
+.footer .footer-widget p {
+    line-height: 1.6; /* Adjust the line height for better readability */
+    font-size: 14px; /* Adjust the font size if needed */
+    margin: 10px 0; /* Margin for paragraphs */
+    color: #ccc; /* Ensure text color is white */
+}
+
+.footer .footer-widget ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.footer .footer-widget ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.footer .footer-widget ul li a:hover {
+    color: #f6692a; /* Ensure list item links are white */
+}
+
+.footer .footer-widget .footer-nav i {
+    font-size: 40px; /* Increase icon size */
+    margin-right: 10px; /* Space between icons */
+    color: #fff; /* Ensure icons are white */
+}
+
+.footer .footer-widget iframe {
+    border: 1px solid #fff; /* White border for iframe */
+}
+
+@media (max-width: 767px) {
+    .footer .col-xs-12 {
+        text-align: center; /* Center align text on small screens */
+    }
+
+    .footer .col-xs-12 .footer-widget {
+        margin-bottom: 20px; /* Space below each widget */
+    }
+}
+
+
+/*---------------------footer--------------------*/
+.footer_bottom {
+    padding: 25px 0 25px;
+    background: #15161b;
+    position: absolute;
+    width: 100%;
+}
+@media only screen and (max-width: 767px) {
+    .footer_bottom {
+        padding: 20px 0;
+    }
+}
+.copyright_area {
+    text-align: center;
+}
+.copyright_area p {
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+@media only screen and (max-width: 767px) {
+    .copyright_area p {
+        letter-spacing: 0;
+    }
+}
+
+.copyright_area p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copyright_area p a:hover {
+    text-decoration: none;
+    color: #f6692a;
+}
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 thg 5, 2024, 00:00:45
+    Author     : pna29
+*/
+
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    visibility: visible;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    letter-spacing: 0.05em;
+}
+.container {
+    max-width: 1600px;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+    }
+}
+/*---------------------footer--------------------*/
+.footer_bottom {
+    padding: 25px 0 25px;
+    background: #15161b;
+}
+@media only screen and (max-width: 767px) {
+    .footer_bottom {
+        padding: 20px 0 25px;
+    }
+}
+.copyright_area {
+    text-align: center;
+}
+.copyright_area p {
+    text-transform: capitalize;
+    line-height: 25px;
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+@media only screen and (max-width: 767px) {
+    .copyright_area p {
+        letter-spacing: 0;
+    }
+}
+
+.copyright_area p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copyright_area p a:hover {
+    text-decoration: none;
+    color: #f6692a;
+}
+
+
